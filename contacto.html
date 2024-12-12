@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumilab</title>
+    <link rel="shortcut icon" href="img/lumilab.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/contacto.css">
+
+</head>
+
+<body>
+    <header><img class="logo" src="img/lumilab.png">
+        <nav>
+            <a href="index.html">Inicio</a></li>
+            <a href="servicios.html">Servicios</a>
+            <a href="nosotros.html">¿Quienes somos?</a>
+            <a href="lineaProducto.html">Líneas de Productos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <div class="inicio">
+            <h1>Laboratorio cosmético de fabricación a terceros.</h1>
+        </div>
+    </header>
+    <main>
+        <h2>Formulario para desarrollo de Nueva Marca de Cosmético</h2>
+        <form action="submit-viaje.php" method="post">
+            <fieldset>
+                <legend>Información de la empresa</legend>
+                    <label for="nombreEmpresa">Nombre empresa:</label><input type="text" required pattern="^[A-Za-zÁ-ÿ\s]{1,20}$" title="Nombre empresa, solo escribir letras hasta 20 dígitos" id="nombre" name="Nombre" class="capitalize" placeholder="Comenzar en mayúscula y solo contener letras" />
+                    <label for="NombrePersonacontacto">Nombre persona de contacto:</label><input type="text" required pattern="^[A-Za-zÁ-ÿ\s]{3,40}$" title="Persona de contacto, solo escribir letras de 4 a 40 dígitos" id="NombrePersonacontacto" name="NombrePersonacontacto" class="capitalize" placeholder="Comenzar en mayúscula y solo contener letras" />
+                    <label for="cif">CIF:</label><input type="text" required pattern="[0-9]{}" title="CIF tiene que tener 9 dígitos" id="cif" name="cif" placeholder="Escriba CIF empresa">
+                    <label for="correo electrónico">Correo persona de contato: </label><input type="email" required pattern="[A-Za-z0-9]+@[A-Za-z0-9]+\.(es|com)" title="Letras mayúsculas y minúsculas, números y .com ó .es" name="correo" placeholder="Escriba correo electrónico persona de contacto" />
+                    <label for="móvil">Móvil persona de contacto:</label><input type="tel" pattern="[0-9]{9}" title="Solo 9 números" id="móvil" name="móvil" placeholder="Escriba móvil persona de contacto" /> 
+            </fieldset>
+            <fieldset>
+                <legend>Información de la marca</legend>
+                    <label for="marca">Nombre de la marca:</label><input type="text" id="marca" name="marca" required>
+                    <label for="descripcion">Descripción de la marca:</label><textarea id="descripcion" name="descripcion" rows="4"></textarea>
+                    <label for="canales">Canales de distribución previstos:</label><select id="canales" name="canales" id="">
+                        <option value="vacio"></option>
+                        <option value="retail">Retail</option>
+                        <option value="online">Online</option>
+                        <option value="salones">Salones de belleza</option>
+                        <option value="farmacia">Farmacia</option>
+                        <option value="tiendas">Tiendas</option>
+                    </select>
+                    <label for="certificadion">Certificación:</label>
+            </fieldset>
+            <fieldset>
+                <legend>Información del nuevo producto</legend>
+                    <label for="producto">Tipo de producto:</label><input list="productos" required><br>
+                        <datalist id="productos">
+                            <option value="Producto capilar">Producto capilar</option>
+                            <option value="Producto corporal">Producto corporal</option>
+                            <option value="Producto facial">Producto facial</option>
+                        </datalist><br>
+                    <label for="tipoProducto">Producto solicitado:</label><br>
+                        <label for="cremac"><input type="checkbox" id="cremac" name="productos" value="cremac">Crema hidratante cuerpo</label>
+                        <label for="cremaf"><input type="checkbox" id="cremaf" name="productos" value="cremaf">Crema hidratante facial</label>
+                        <label for="serumf"><input type="checkbox" id="serumf" name="productos" value="serumf">Serum facial</label>
+                        <label for="serumca"><input type="checkbox" id="serumca" name="productos" value="serumca">Serum capilar</label>
+                        <label for="limpiador"><input type="checkbox" id="crema" name="productos" value="limpiador">Limpiador facial</label>
+                        <label for="gel"><input type="checkbox" id="gel" name="productos" value="gel">Gel</label>
+                        <label for="champu"><input type="checkbox" id="champu" name="productos" value="champu">Champu</label>
+                        <label for="exfoliantec"><input type="checkbox" id="exfoliantec" name="productos" value="exfoliantec">Exfoliante corporal</label>
+                        <label for="exfoliantef"><input type="checkbox" id="exfoliantef" name="productos" value="exfoliantef">Exfoliante facial</label>
+                        <label for="exfolianteca"><input type="checkbox" id="exfolianteca" name="productos" value="exfolianteca">Exfoliante capilar</label>
+                        <label for="mascarillaf"><input type="checkbox" id="mascarillaf" name="productos" value="mascarillaf">Mascarilla facial</label>
+                        <label for="mascarillaca"><input type="checkbox" id="mascarillaca" name="productos" value="mascarillaca">Mascarilla capilar</label><br>
+                    <label for="requisitos">Requisistos técnicos:</label><br>
+                        <label for="ingredientes">Ingredientes principales deseados:</label><textarea id="ingredientes" name="ingredientes" rows="5"></textarea>
+                    <label for="fragancia">Fragancia:</label>    
+                        <label for="sin_fragancia">Sin fragancia</label><input type="radio" id="sin_fragancia" name="fragancia" value="sin">
+                        <label for="con_fragancia">Con fragancia</label><input type="radio" id="con_fragancia" name="fragancia" value="con">
+                    <label>Tipo de envase</label>
+                        <label for="cod_1"><input type="checkbox" id="cod_1" name="cod_1" value="cod_1">Código 1</label>
+                        <label for="cod_2"><input type="checkbox" id="cod_2" name="cod_2" value="cod_2">Código 2</label>
+                        <label for="cod_3"><input type="checkbox" id="cod_3" name="cod_3" value="cod_3">Código 3</label>
+                        <label for="cod_4"><input type="checkbox" id="cod_4" name="cod_4" value="cod_4">Código 4</label>
+                        <label for="cod_5"><input type="checkbox" id="cod_5" name="cod_5" value="cod_5">Código 5</label>
+                        <label for="cod_6"><input type="checkbox" id="cod_6" name="cod_6" value="cod_6">Código 6</label>
+                        <label for="cod_7"><input type="checkbox" id="cod_7" name="cod_7" value="cod_7">Código 7</label>
+                        <label for="cod_8"><input type="checkbox" id="cod_8" name="cod_8" value="cod_8">Código 8</label>
+            </fieldset>
+            <fieldset>
+                <legend>Presupuesto y plazos</legend>
+                    <label for="presupuesto">Presupuesto estimado:</label><input type="text" id="presupuesto" name="presupuesto">
+                    <label for="fecha">Fecha deseada de lanzamiento:</label><input type="date" id="fecha" name="fecha">
+            </fieldset>
+            <fieldset>
+                <legend>Comentarios adicionales</legend>
+                <textarea minlength="100" name="texto" cols="30" rows="8"></textarea>                    
+            </fieldset>
+            <p><input type="reset" value="Borror" /></p>
+            <p><input type="submit" value="Enviar" /></p>
+
+        </form>
+    </main>
+
+    <footer>
+        <div class="informacion">
+            <div class="info">
+                <h3>Contacto</h3>
+                <p>De lunes a viernes de 8 a 16 horas:</p>
+                <p>+34652354345</p>
+                <p>info@lumilab.com</p>
+            </div>
+            <div class="info">
+                <h3>Dirección</h3>
+                <p>C/ Carolina Coronado, s/n</p>
+                <p>06800 Mérida</p>
+                <p>(Badajoz)</p>
+            </div>
+            <div class="info">
+                <h3>Redes sociales</h3>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>Linkedin</p>
+            </div>    
+        </div>
+        <p class="final">2024 Laboratorio cosmética de fabricación a terceros.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente principal */
+    line-height: 1.6; /* Espaciado entre líneas de texto */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+    color: #333; /* Color del texto principal */
+    background-color: #e1dede; /* Color de fondo de la página */
+}
+
+header {
+    background-color: rgba(14, 142, 129); /*fondo con color*/
+    color: white; /* Color del texto en blanco */
+    padding: 20px; /* Espaciado dentro del header */
+}
+
+header img {
+    width: 60px;
+}
+
+header nav {
+    display: flex; /* Utiliza Flexbox para organizar los enlaces */
+    justify-content: center; /* Centra los enlaces */
+    gap: 20px; /* Espacio entre los enlaces */
+}
+
+header nav a {
+    color: #f1ecd6; /* Los enlaces son blancos */
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    font-size: 18px; /* Tamaño de fuente para los enlaces */
+}
+
+header nav a:hover {
+    text-decoration: underline; /* Subraya el enlace cuando se pasa el cursor sobre él */
+}
+
+header .inicio {
+    text-align: center; /* Centra el contenido */
+    padding: 50px; /* Espaciado arriba y abajo */
+    font-size: 30px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
+}
+
+main {
+    padding: 20px; /* Espaciado dentro del contenedor */
+}
+
+.detalle {
+  /*  display: inline-block;
+    /*flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; /* Alinea verticalmente */
+    /*gap: 10px; /* Espacio entre la imagen y el texto */
+}
+  
+.detalle img {
+   /* width: 350px; /* Ajusta el tamaño de la imagen */
+   /* height: auto; /* Mantiene las proporciones */
+}
+  
+.texto {
+   /* font-size: 16px; /* Tamaño de letra */
+}
+
+.detalle table, 
+.detalle th, 
+.detalle td {
+ /*   flex: 1 1 0;
+    border: 1px solid black;
+    border-collapse: collapse;*/
+}
+
+.detalle {
+    display: flex; /* Flexbox para organizar la imagen y la tabla */
+    flex-direction: row;
+    gap: 20px; /* Espacio entre la imagen y el contenido */
+    justify-content: center;
+    align-items: center; /* Alineación superior */
+}
+
+.detalle img {
+    width: 450px; /* La imagen ocupa el 40% del contenedor */
+    height: auto; /* Mantiene las proporciones */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.detalles {
+    padding-left: 50px;
+}
+
+.detalle .texto {
+    font-size: 20px;
+    color: rgba(14, 142, 129);
+}
+
+.detalle table {
+    width: 500px;
+    border-collapse: collapse;
+}
+
+.detalle th, .detalle td {
+    border: 1px solid #3dc2b2;
+    padding: 10px;
+    text-align: center;
+}
+
+.detalle th {
+    background-color: #30a396;
+    color: white;
+}
+
+.detalle td {
+    background-color: #e0e3e3;
+}
+
+footer {
+    background-color: rgba(14, 142, 129); /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espaciado dentro del pie de página */
+}
+
+footer .informacion {
+    display: flex; /* Utiliza Flexbox para distribuir las marcas */
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+    justify-content: space-evenly;/* Espacio igual entre las marcas */
+    align-items: center;
+}
+
+footer .info {
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+footer .final {
+    font-size: 15px; /* Tamaño de fuente más pequeño */
+    margin-top: 20px; /* Espacio superior */
+    color: white;
+    text-align: center;
+}
