@@ -47,21 +47,34 @@ header .inicio {
     font-weight: bold; /* Texto en negrita */
 }
 
+main { 
+    padding: 20px; /* Espaciado dentro del contenedor */
+}
+
 .sobrenosotros {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 100px;
-    padding-left: 300px;
-    width: 60%;
+    padding-top: 80px;
+    padding-right: 100px;
+    padding-left: 150px;
+    padding-bottom: 0;
+    width: 80%;
 }
 
 .sobrenosotros h1 {
     color: #264653;
 }
 
-.sobrenosotros h1, p {
-    padding-left: 50px;
+.nosotros {
+    padding-right: 100px;
+}
+
+.nosotros1 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    padding-left: 150px;
+    padding-bottom: 30px;
 }
 
 .video {
